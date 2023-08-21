@@ -174,6 +174,11 @@ Manipuler le Document Object Model (DOM) est une part importante de la programma
 
 Ces exemples illustrent quelques-unes des fonctions JavaScript les plus couramment utilisées pour manipuler le DOM. N'oubliez pas que le DOM offre de nombreuses autres fonctionnalités et méthodes pour une manipulation plus avancée et ciblée des éléments sur une page web.
 
+
+Ces méthodes permettent de manipuler les tableaux de manière efficace et expressive. N'hésitez pas à les combiner pour réaliser des opérations plus complexes sur les tableaux en JavaScript.
+
+Bien sûr, voici des exemples concrets d'utilisation de certaines des méthodes de tableau mentionnées :
+
 En JavaScript, les tableaux possèdent plusieurs méthodes intégrées qui permettent de manipuler, filtrer, parcourir et modifier leurs éléments. Voici une liste de certaines des méthodes les plus couramment utilisées qui s'appliquent sur tous les tableaux :
 
 1. **Ajout et suppression d'éléments :**
@@ -181,45 +186,6 @@ En JavaScript, les tableaux possèdent plusieurs méthodes intégrées qui perme
    - `.pop()`: Supprime le dernier élément du tableau.
    - `.shift()`: Supprime le premier élément du tableau.
    - `.unshift(element)`: Ajoute un élément au début du tableau.
-
-2. **Parcours et itération :**
-   - `.forEach(callback)`: Exécute une fonction sur chaque élément du tableau.
-   - `.map(callback)`: Crée un nouveau tableau en appliquant une fonction à chaque élément.
-   - `.filter(callback)`: Crée un nouveau tableau avec les éléments qui satisfont une condition.
-   - `.find(callback)`: Renvoie le premier élément qui satisfait une condition.
-   - `.indexOf(element)`: Renvoie l'index du premier élément correspondant.
-   - `.lastIndexOf(element)`: Renvoie l'index du dernier élément correspondant.
-
-3. **Vérification et manipulation :**
-   - `.includes(element)`: Vérifie si le tableau contient un élément donné.
-   - `.some(callback)`: Vérifie si au moins un élément satisfait une condition.
-   - `.every(callback)`: Vérifie si tous les éléments satisfont une condition.
-   - `.sort(compareFunction)`: Trie les éléments du tableau (peut être utilisé avec une fonction de comparaison personnalisée).
-   - `.reverse()`: Inverse l'ordre des éléments dans le tableau.
-
-4. **Réduction (agrégation) :**
-   - `.reduce(callback, initialValue)`: Applique une fonction de réduction sur les éléments du tableau pour obtenir une valeur unique.
-   - `.reduceRight(callback, initialValue)`: Même que `reduce`, mais en commençant par la fin du tableau.
-
-5. **Transformation :**
-   - `.join(separator)`: Crée une chaîne en joignant les éléments du tableau avec le séparateur spécifié.
-   - `.slice(start, end)`: Crée un nouveau tableau en extrayant une portion du tableau original.
-   - `.splice(start, deleteCount, ...items)`: Modifie le tableau en supprimant/remplaçant/ajoutant des éléments à partir de l'index spécifié.
-
-6. **Vérification de type :**
-   - `.isArray()`: Vérifie si une variable est un tableau.
-
-7. **Copie et clonage :**
-   - `.concat(...arrays)`: Fusionne plusieurs tableaux pour créer un nouveau tableau.
-   - `.slice()`: Crée une copie superficielle (shallow copy) du tableau.
-
-8. **Transformations :**
-   - `.map(callback)`: Crée un nouveau tableau en appliquant une fonction à chaque élément.
-   - `.flatMap(callback)`: Crée un nouveau tableau en appliquant une fonction à chaque élément et en aplatissant les résultats.
-
-Ces méthodes permettent de manipuler les tableaux de manière efficace et expressive. N'hésitez pas à les combiner pour réaliser des opérations plus complexes sur les tableaux en JavaScript.
-
-Bien sûr, voici des exemples concrets d'utilisation de certaines des méthodes de tableau mentionnées :
 
 1. **Ajout et suppression d'éléments :**
 ```javascript
@@ -237,6 +203,15 @@ console.log(numbers); // Affiche [2, 3]
 numbers.unshift(0); // Ajoute 0 au début du tableau
 console.log(numbers); // Affiche [0, 2, 3]
 ```
+
+2. **Parcours et itération :**
+   - `.forEach(callback)`: Exécute une fonction sur chaque élément du tableau.
+   - `.map(callback)`: Crée un nouveau tableau en appliquant une fonction à chaque élément.
+   - `.filter(callback)`: Crée un nouveau tableau avec les éléments qui satisfont une condition.
+   - `.find(callback)`: Renvoie le premier élément qui satisfait une condition.
+   - `.indexOf(element)`: Renvoie l'index du premier élément correspondant.
+   - `.lastIndexOf(element)`: Renvoie l'index du dernier élément correspondant.
+
 
 2. **Parcours et itération :**
 ```javascript
@@ -264,6 +239,13 @@ console.log(firstEvenNumber); // Affiche 2
 const indexOfThree = numbers.indexOf(3); // Trouve l'index de 3 (2)
 console.log(indexOfThree); // Affiche 2
 ```
+3. **Vérification et manipulation :**
+   - `.includes(element)`: Vérifie si le tableau contient un élément donné.
+   - `.some(callback)`: Vérifie si au moins un élément satisfait une condition.
+   - `.every(callback)`: Vérifie si tous les éléments satisfont une condition.
+   - `.sort(compareFunction)`: Trie les éléments du tableau (peut être utilisé avec une fonction de comparaison personnalisée).
+   - `.reverse()`: Inverse l'ordre des éléments dans le tableau.
+
 
 3. **Vérification et manipulation :**
 ```javascript
@@ -279,6 +261,9 @@ console.log(fruits); // Affiche ['apple', 'banana', 'orange']
 fruits.reverse(); // Inverse l'ordre des fruits
 console.log(fruits); // Affiche ['orange', 'banana', 'apple']
 ```
+4. **Réduction (agrégation) :**
+   - `.reduce(callback, initialValue)`: Applique une fonction de réduction sur les éléments du tableau pour obtenir une valeur unique.
+   - `.reduceRight(callback, initialValue)`: Même que `reduce`, mais en commençant par la fin du tableau.
 
 4. **Réduction (agrégation) :**
 ```javascript
@@ -291,6 +276,12 @@ console.log(sum); // Affiche 15
 ```
 
 5. **Transformation :**
+   - `.join(separator)`: Crée une chaîne en joignant les éléments du tableau avec le séparateur spécifié.
+   - `.slice(start, end)`: Crée un nouveau tableau en extrayant une portion du tableau original.
+   - `.splice(start, deleteCount, ...items)`: Modifie le tableau en supprimant/remplaçant/ajoutant des éléments à partir de l'index spécifié.
+
+
+5. **Transformation :**
 ```javascript
 const words = ['Hello', 'world', 'how', 'are', 'you'];
 
@@ -300,6 +291,8 @@ console.log(sentence); // Affiche "Hello world how are you"
 const subArray = words.slice(1, 3); // Crée un sous-tableau avec 'world' et 'how'
 console.log(subArray); // Affiche ['world', 'how']
 ```
+6. **Vérification de type :**
+   - `.isArray()`: Vérifie si une variable est un tableau.
 
 6. **Vérification de type :**
 ```javascript
@@ -307,6 +300,13 @@ const myArray = [1, 2, 3];
 
 console.log(Array.isArray(myArray)); // true
 ```
+7. **Copie et clonage :**
+   - `.concat(...arrays)`: Fusionne plusieurs tableaux pour créer un nouveau tableau.
+   - `.slice()`: Crée une copie superficielle (shallow copy) du tableau.
+
+8. **Transformations :**
+   - `.map(callback)`: Crée un nouveau tableau en appliquant une fonction à chaque élément.
+   - `.flatMap(callback)`: Crée un nouveau tableau en appliquant une fonction à chaque élément et en aplatissant les résultats.
 
 Ces exemples illustrent différentes méthodes pour manipuler les tableaux en JavaScript. Vous pouvez les combiner de différentes manières pour accomplir des tâches spécifiques en fonction de vos besoins.
 
